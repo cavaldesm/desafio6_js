@@ -1,0 +1,248 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Cuerpo*/
+
+body {
+    background-color: #ECEFD2;
+    font-family: "Ruda";
+    color: #000000;
+  }
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+/*Imágenes*/
+
+.local-img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+/*Contenedor texto*/
+
+.texto-container{
+    text-align: center;
+}
+
+h1{
+    font-size: 5vw;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Textos*/
+
+.textolocal{
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textolocal2{
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textolocal3{
+  font-size: 1vw;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Botones*/
+
+.button-container{
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.prev-btn,
+.next-btn,
+.random-btn{
+  background-color: #9CD097;
+  padding: 5px;
+  font-family: "Ruda";
+  font-size: 20px;
+  margin: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.random-btn:hover {
+  font-style: italic;
+}
+
+/*Carrusel*/
+.images-slideshow {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.imageSlides {
+    display: none
+  }
+   
+.carrusel{
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
+   
+/*Botones del carrusel*/
+
+.slider-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 8px 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #9CD097;
+    border-radius: 50%;
+  }
+
+/*Posición de los botones*/
+  .previous {
+    left: 2%;
+  }
+
+  .next {
+    right: 2%;
+  }
+
+  /*Cuando el usuario pase el cursor*/
+  .previous:hover,
+  .next:hover {
+    color: #ECEFD2;
+    background-color: #9CD097;
+  }
+
+/*Localstorage*/
+
+#usuariorecomienda {
+  font-family: "Ruda";
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.sug-btn{
+  background-color: #9CD097;
+  padding: 5px;
+  font-family: "Ruda";
+  font-size: 20px;
+  margin: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.sug-btn:hover{
+  font-style: italic;
+}
+
+/*Probando librerías*/
+
+.third{
+  background-color: #9CD097;
+  padding: 5px;
+  font-family: "Ruda";
+  font-size: 20px;
+  margin: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.third:hover{
+  font-style: italic;
+}
+
+.second{
+  background-color: #9CD097;
+  padding: 5px;
+  font-family: "Ruda";
+  font-size: 20px;
+  margin: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+/*Probando formularios*/
+
+.form{
+  background-color: #9CD097;
+  padding: 10px 10px 10px;
+}
+
+.footer{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.submit{
+  background-color: black;
+  color: #9CD097;
+  padding: 5px;
+  font-family: "Ruda";
+  font-size: 20px;
+  margin: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.submit:hover{
+font-style: italic;
+  }
+
+.field{
+  font-size: 20px;
+}
+
+.first {
+  background: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'Lato';
+  margin: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.first:hover {
+  background: orange;
+}
