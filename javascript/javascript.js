@@ -190,7 +190,7 @@ document.querySelector(".second").addEventListener('click', function(){
       '<i class="fa fa-thumbs-up"></i> Gracias',
     confirmButtonAriaLabel: 'Thumbs up, great!',
     cancelButtonText:
-      '<i class="fa fa-thumbs-down"></i>',
+      '<i class="fa fa-thumbs-down"></i> No me fue útil',
     cancelButtonAriaLabel: 'Thumbs down'
   });
 });
@@ -234,10 +234,10 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 
 // Revisar que no esté vacío
 
-	if (!hasValue(input, requiredMsg)) {
-		return false;
+if (!hasValue(input, requiredMsg)) {
+	return false;
 	}
-
+  
 // Validación correo
 
 	const emailRegex =
@@ -252,9 +252,9 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 
 const form = document.querySelector("#signup");
 
-const NAME_REQUIRED = "Por favor, ingresa tu nombre";
-const EMAIL_REQUIRED = "Por favor, ingresa tu correo";
-const EMAIL_INVALID = "Por favor, ingresa un correo válido";
+const NAME_REQUIRED = "Por favor, ingresa tu nombre...";
+const EMAIL_REQUIRED = "Por favor, ingresa tu correo...";
+const EMAIL_INVALID = "Por favor, ingresa un correo válido...";
 
 form.addEventListener("submit", function (event) {
 	event.preventDefault();
